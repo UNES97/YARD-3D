@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1a6fba;
+  --color-brand-50: #eaf3fb;
+  --color-brand-100: #d3e6f6;
+  --color-apmt: #f26522;
+  --color-ink: #0f1d2b;
+  --font-sans: var(--font-maersk-text), Arial, "Segoe UI", sans-serif;
+  --font-headline: var(--font-maersk-headline), var(--font-maersk-text), Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #e8eef4;
+  color: var(--color-ink);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: rgb(255 255 255 / 0.96);
+  border: 1px solid rgb(203 213 225 / 0.7);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgb(15 40 70 / 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
